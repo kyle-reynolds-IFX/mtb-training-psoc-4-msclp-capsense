@@ -1,0 +1,1692 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="PSOC™ 4 CAPSENSE™ training">
+      
+      
+        <meta name="author" content="Infineon Technologies AG">
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Training manual - PSOC™ 4 CAPSENSE™ training manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#psoctm-4-capsensetm-training-manual" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="PSOC™ 4 CAPSENSE™ training manual" class="md-header__button md-logo" aria-label="PSOC™ 4 CAPSENSE™ training manual" data-md-component="logo">
+      
+  <img src="assets/images/infineon_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PSOC™ 4 CAPSENSE™ training manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Training manual
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Infineon/mtb-training-psoc-4-msclp-capsense" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Infineon/mtb-training-psoc-4-msclp-capsense
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="PSOC™ 4 CAPSENSE™ training manual" class="md-nav__button md-logo" aria-label="PSOC™ 4 CAPSENSE™ training manual" data-md-component="logo">
+      
+  <img src="assets/images/infineon_logo.png" alt="logo">
+
+    </a>
+    PSOC™ 4 CAPSENSE™ training manual
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Infineon/mtb-training-psoc-4-msclp-capsense" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Infineon/mtb-training-psoc-4-msclp-capsense
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training manual
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="PSOC%28TM%29%204%20CAPSENSE%28TM%29%20training%20manual.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        About this document
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-and-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope and purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intended-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intended audience
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-development-tools-and-prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required development tools and prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capsensetm-performance-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAPSENSE&trade; performance tuning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capsensetm-low-power-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CAPSENSE&trade; low power tuning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revision-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revision history
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disclaimer
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="psoctm-4-capsensetm-training-manual">PSOC&trade; 4 CAPSENSE&trade; training manual<a class="headerlink" href="#psoctm-4-capsensetm-training-manual" title="Permanent link">&para;</a></h1>
+<h2 id="about-this-document">About this document<a class="headerlink" href="#about-this-document" title="Permanent link">&para;</a></h2>
+<p>This training manual covers the labs for the introduction to CAPSENSE&trade; on the PSOC&trade; 4000T and the PSOC&trade; 4100T Plus training.</p>
+<h2 id="scope-and-purpose">Scope and purpose<a class="headerlink" href="#scope-and-purpose" title="Permanent link">&para;</a></h2>
+<p>The manual covers the following objectives: project creation, tuning CAPSENSE&trade; sensors, updating the PSOC&trade; 4100T Plus for optimal power consumption, and key takeaways.</p>
+<h2 id="intended-audience">Intended audience<a class="headerlink" href="#intended-audience" title="Permanent link">&para;</a></h2>
+<p>This manual is intended for design engineers, technicians, and developers of electronic systems.</p>
+<h2 id="table-of-contents">Table of contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#about-this-document">About this document</a></li>
+<li><a href="#scope-and-purpose">Scope and purpose</a></li>
+<li><a href="#intended-audience">Intended audience</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#_Required_development_tools">Required development tools and prerequisites</a></li>
+<li><a href="#capsensetm-performance-tuning">CAPSENSE&trade; performance tuning</a></li>
+<li><a href="#capsensetm-low-power-tuning">CAPSENSE&trade; low power tuning</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#revision-history">Revision history</a></li>
+<li><a href="#disclaimer">Disclaimer</a></li>
+</ul>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This manual provides instructions to create, configure, and build the <strong>PSOC&trade; 4100T Plus MSCLP low-power CSD button</strong> project to optimise capacitive performance and reduce power consumption.</p>
+<h2 id="required-development-tools-and-prerequisites"><span id="_Required_development_tools"></span>Required development tools and prerequisites<a class="headerlink" href="#required-development-tools-and-prerequisites" title="Permanent link">&para;</a></h2>
+<h3 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ModusToolbox&trade; software</strong> v3.9 or later (Recommended installation via <a href="https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolboxsetup">ModusToolbox&trade; Setup tool</a>)</li>
+<li><a href="https://code.visualstudio.com/"><strong>Microsoft Visual Studio Code</strong></a> with the <a href="https://marketplace.visualstudio.com/items?itemName=InfineonAG.modustoolbox-for-vscode"><strong>ModusToolbox&trade; for VS Code</strong></a> extension installed</li>
+<li><strong>ModusToolbox&trade; Programming Tools</strong> v1.9.0 or later (Installed by <a href="https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolboxsetup">ModusToolbox&trade; Setup tool</a> as a dependency to ModusToolbox&trade; v3.9)</li>
+<li><strong>ModusToolbox&trade; CAPSENSE&trade; and Multi-Sense Pack</strong> v1.6.0 or later (Recommended installation via <a href="https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolboxsetup">ModusToolbox&trade; Setup tool</a>)</li>
+<li><strong>PSOC&trade; 4100T Plus Prototyping Kit</strong> (<a href="https://www.infineon.com/evaluation-board/CY8CPROTO-041TP">CY8CPROTO-041TP</a>)</li>
+</ul>
+<div class="figure-images">
+<img src="assets/images/psoc_4100t_plus_prototyping_kit.png" alt="Figure 1. PSOC&trade; 4100T Plus prototyping kit" style="width:491px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://infineon-academy.csod.com/ui/lms-learning-details/app/video/369c75f1-7812-405a-a312-4d1de5483f73">Introduction to PSOC&trade; 4100T Plus Training</a></li>
+<li>Install the software and obtain the hardware listed in the Required development tools section.</li>
+</ul>
+<p><span id="capsensetm-performance-tuning"></span></p>
+<h2 id="capsensetm-performance-tuning">CAPSENSE&trade; performance tuning<a class="headerlink" href="#capsensetm-performance-tuning" title="Permanent link">&para;</a></h2>
+<h3 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h3>
+<p>The objective of this exercise is to learn how to go through the CAPSENSE&trade; performance tuning process. The MSCLP low-power CSD button example project will have the device configured for optimal capacitive sensor tuning, but tweaks can be made to show how each setting impacts the sensitivity of the sensors.</p>
+<h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
+<p>When tuning a capacitive sensor, it is recommended to follow the CAPSENSE&trade; performance tuning process. There are five stages in this process:</p>
+<ul>
+<li>
+<p><a href="#_Stage_1_-">Set the initial hardware parameters</a></p>
+</li>
+<li>
+<p><a href="#_Stage_2_-_1">Set the sense clock frequency</a></p>
+</li>
+<li>
+<p><a href="#_Stage_3_-">Set the Capacitive DAC (CDAC) tuning mode</a></p>
+</li>
+<li>
+<p><a href="#_Stage_4_-_1">Fine-tune for the required SNR, power, and refresh rate</a></p>
+</li>
+<li>
+<p><a href="#_Stage_5_-">Tune the touch threshold parameters</a></p>
+</li>
+</ul>
+<div class="figure-images">
+<img src="assets/images/capsense_performance_tuning_flowchart.png" alt="Figure 2. CAPSENSE&trade; performance tuning flowchart" style="width:602px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<h3 id="performance-tuning-steps">Performance tuning steps<a class="headerlink" href="#performance-tuning-steps" title="Permanent link">&para;</a></h3>
+<h4 id="project-creation">Project creation<a class="headerlink" href="#project-creation" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Before creating the first project in this training series, create the workspace. Open <strong>VS Code</strong> from the <strong>Windows Start</strong> menu</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> If you have not installed ModusToolbox&trade; along with the ModusToolbox&trade; for VS Code extension, see the <a href="#_Required_development_tools">Required development tools</a> section</p>
+</blockquote>
+<p><img src="assets/images/running_vs_code_from_the_windows_11_search_bar.png" alt="Running Vs Code From The Windows 11 Search Bar" style="width:368px; height:auto; display:block; margin:0 auto;" /></p>
+<ol start="2">
+<li>Open a <strong>workspace directory</strong> for your project in VS Code</li>
+</ol>
+<p><img src="assets/images/opening_vs_code_workspace.png" alt="Opening Vs Code Workspace" style="width:466px; height:auto; display:block; margin:0 auto;" /></p>
+<ol start="3">
+<li>Click <strong>File &gt; Open Folder</strong> and choose your workspace directory or create a new folder</li>
+<li>Click <strong>Select Folder</strong> to open the workspace directory in VS Code</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Open the workspace in trusted mode. If the default workspace trust is restricted mode, click <strong>Restricted Mode</strong> in the bottom left and change to trust this folder</p>
+</blockquote>
+<p><img src="assets/images/workspace_opened_in_restricted_mode.png" alt="Opening Vs Code Workspace" style="width:738px; height:auto; display:block; margin:0 auto;" /></p>
+<p><img src="assets/images/opening_workspace_in_trusted_mode.png" alt="Opening Vs Code Workspace" style="width:1200px; height:auto; display:block; margin:0 auto;" /></p>
+<ol start="5">
+<li>Open the <strong>Command Palette</strong> by pressing <strong>Ctrl+Shift+P</strong></li>
+<li>Search for <strong>Infineon ModusToolbox&trade;: Show Main Page</strong> and select it</li>
+<li>Open the <strong>Infineon ModusToolbox&trade; for VS Code</strong> main page</li>
+</ol>
+<p><img src="assets/images/modustoolbox_for_vs_code_main_page.png" alt="Modustoolbox For Vs Code Main Page" style="width:1200px; height:auto; display:block; margin:0 auto;" /></p>
+<ol start="8">
+<li>Navigate to the <strong>Create Project</strong> tab and click <strong>Launch Project Creation</strong></li>
+<li><strong>Project Creator Tool</strong> opens and prompts you to choose a <strong>BSP</strong> (Board Support Package). Select the <strong>CY8CPROTO-041TP BSP</strong> under the <strong>PSOC 4 BSPs</strong>, and continue to the application selection</li>
+</ol>
+<p>BSPs are aligned with the development and evaluation kits; they provide files for basic device functionality. A BSP typically has a <strong>design.modus</strong> file that configures clocks and other board-specific capabilities. That file is used by the ModusToolbox&trade; configurators. A BSP also includes the required device support code for the device on the board. You can modify the configuration to suit your application</p>
+<p><img src="assets/images/selecting_the_psoc_4100tp_bsp.png" alt="Project Creator Bsp Selection" style="width:1016px; height:auto; display:block; margin:0 auto;" /></p>
+<ol start="10">
+<li>Select the <strong>MSCLP Low Power CSD</strong> button under the Sensing section, choose a project directory, and create the project</li>
+</ol>
+<p><img src="assets/images/project_creator_example_code_project_creation.png" alt="Project Creator Bsp Selection" style="width:1016px; height:auto; display:block; margin:0 auto;" /></p>
+<ol start="11">
+<li>When project creation is complete, it will prompt you to <strong>Load Project</strong>. Do this so that the VS Code workspace for the new project is loaded</li>
+</ol>
+<p><img src="assets/images/load_project_vscode.png" alt="" style="width:400px; height:auto; display:block; margin:0 auto;" /></p>
+<ol start="12">
+<li>Once the workspace is loaded, the ModusToolbox application view provides actions to build, clean, erase, program, and configure the device</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/csd_button_vscode_modustoolbox_extension.png" alt="MSCLP Low Power CSD button project in the ModusToolbox VS Code extension" style="width:1200px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<blockquote>
+<p><strong>Note:</strong> The ModusToolbox&trade; for VS Code extension may display buttons indicating that the VS Code tasks and settings need to be updated. Simply click the buttons to correct the issues. This is a minor version mismatch between the ModusToolbox&trade; tools and the VS Code extension and does not affect functionality.</p>
+</blockquote>
+<p><img src="assets/images/vscode_fix_settings_and_tasks.png" alt="VS Code extension prompting to fix tasks and settings" style="width:800px; height:auto; display:block; margin:0 auto;" /></p>
+<p><span id="_Stage_1_-"></span></p>
+<h4 id="stage-1-set-the-initial-hardware-parameters">Stage 1 - set the initial hardware parameters<a class="headerlink" href="#stage-1-set-the-initial-hardware-parameters" title="Permanent link">&para;</a></h4>
+<p>The initial hardware parameters include:</p>
+<ul>
+<li>
+<p>CAPSENSE&trade; IMO clock frequency setting</p>
+</li>
+<li>
+<p>Modulator clock divider</p>
+</li>
+<li>
+<p>Number of initial sub-conversions</p>
+</li>
+<li>
+<p>CIC2 hardware filter</p>
+</li>
+<li>
+<p>Hardware and software IIR filter configuration</p>
+</li>
+<li>
+<p>Inactive sensor connection</p>
+</li>
+<li>
+<p>Shield configuration (mode and count)</p>
+</li>
+<li>
+<p>Raw count calibration level</p>
+</li>
+<li>
+<p>Sense clock configuration (divider and clock source)</p>
+</li>
+<li>
+<p>Number of sub-conversions</p>
+</li>
+<li>
+<p>Decimation rate</p>
+</li>
+<li>
+<p>GPIO configuration</p>
+</li>
+<li>
+<p>Sensor pins, CMOD pins, and shield pins</p>
+</li>
+<li>
+<p>Scan slots</p>
+</li>
+<li>
+<p>Initial touch and noise thresholds, debounce, and hysteresis</p>
+</li>
+</ul>
+<ol>
+<li>Open the <strong>CAPSENSE&trade; Configurator</strong> from the <strong>ModusToolbox&trade; for VS Code</strong> extension</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/launching_capsense_configurator_from_vscode_extension.png" alt="Selecting the CAPSENSE&trade; configurator from the ModusToolbox for VS Code extension" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="2">
+<li>Open the <strong>Advanced → General</strong> tab to configure the initial CAPSENSE&trade; IMO clock frequency and divider, as well as the initial filter settings</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_configurator_general_tab.png" alt="Figure 10. CAPSENSE&trade; configurator general tab" style="width:909px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Setting</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CAPSENSE&trade; IMO clock frequency (MHz)</td>
+<td>Default: Max=46 MHz</td>
+<td>Frequency of the clock used as a source for the CAPSENSE&trade; peripheral</td>
+</tr>
+<tr>
+<td>Modulator clock divider</td>
+<td>Default: 1</td>
+<td>Set to obtain the optimum modulator clock frequency</td>
+</tr>
+<tr>
+<td>Number of init sub-conversions</td>
+<td>Default: 3</td>
+<td>To ensure proper initialization of CAPSENSE&trade; 3, an init sub-conversion is required</td>
+</tr>
+<tr>
+<td>Enable CIC2 HW filter</td>
+<td>Default: Checked</td>
+<td>Increases Signal and SNR</td>
+</tr>
+<tr>
+<td>Enable IIR filter (first order) (Software Filter)</td>
+<td>Default: Checked</td>
+<td>Reduces noise</td>
+</tr>
+<tr>
+<td>IIR filter raw count coefficient</td>
+<td>Default: 128</td>
+<td>A lower coefficient value results in lower noise, but slows down the response</td>
+</tr>
+<tr>
+<td>Enable self-test library</td>
+<td>Default: Uncheck</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Enable IIR filter (first order) (Hardware Filter)</td>
+<td>Default: Unchecked</td>
+<td>–</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li>Open the <strong>Advanced → CSD</strong> settings tab to configure the initial shield settings</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_configurator_csd_settings_tab.png" alt="Figure 11. CAPSENSE&trade; configurator CSD settings tab" style="width:441px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Setting</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inactive sensor connection</td>
+<td>Shield <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td>Connecting inactive sensors to the shield reduces Cp</td>
+</tr>
+<tr>
+<td>Shield mode</td>
+<td>Active</td>
+<td>The driven shield is a signal that replicates the sensor-switching signal. It helps reduce sensor parasitic capacitance</td>
+</tr>
+<tr>
+<td>Total shield count</td>
+<td>Equal to the number of shield electrodes in the design</td>
+<td>Selects the number of shield electrodes used in the design. Most designs work with one dedicated shield electrode, but some designs require multiple dedicated shield electrodes to ease the PCB layout routing or to minimise the PCB area used for the shield layer</td>
+</tr>
+<tr>
+<td>Raw count calibration level</td>
+<td>Default: 70%</td>
+<td>If the sensor raw count saturates (equals Max Raw count) on touch, reduce the Raw count calibration level (%). This will prevent raw count saturation</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>Open <strong>Advanced → Widget Details</strong> to modify each sensor widget configuration</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_configurator_widget_details_tab.png" alt="Figure 12. CAPSENSE&trade; configurator - Widget Details tab" style="width:925px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Setting</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sense clock divider</td>
+<td>Default: 16</td>
+<td>Value is set in <a href="#_Stage_2_-_1">Stage 2</a></td>
+</tr>
+<tr>
+<td>Clock source</td>
+<td>Default: Direct</td>
+<td>Direct clock is a constant frequency sense clock source. When you choose this option, the sensor pin switches with a constant frequency. Spread spectrum clock (SSC) or PRS clock can be used as a clock source to deal with EMI/EMC issues.</td>
+</tr>
+<tr>
+<td>Number of sub-conversions</td>
+<td>8</td>
+<td>A good starting point to ensure a fast scan time and sufficient signal. This value will be adjusted as required in <a href="#_Stage_4_-_1">Stage 4</a></td>
+</tr>
+<tr>
+<td>Decimation rate</td>
+<td>Default: Auto</td>
+<td>Setting this to Auto will calculate the Decimation rate parameter automatically</td>
+</tr>
+<tr>
+<td>Finger threshold</td>
+<td>Default: 75</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Noise threshold</td>
+<td>Default: 36</td>
+<td>Baseline is not updated when the raw count is above baseline + Noise threshold.</td>
+</tr>
+<tr>
+<td>Negative noise threshold</td>
+<td>Default: 36</td>
+<td>Baseline is not updated when the raw count is above baseline + Noise threshold.</td>
+</tr>
+<tr>
+<td>Low-baseline reset</td>
+<td>Default: 30</td>
+<td>If the raw count is lower than the Negative Noise Threshold for these many samples, the baseline is reset to the current raw count.</td>
+</tr>
+<tr>
+<td>Hysteresis</td>
+<td>Default: 9</td>
+<td>Prevents sensor status toggling due to system noise.</td>
+</tr>
+<tr>
+<td>ON debounce</td>
+<td>Default: 3</td>
+<td>Number of consecutive scans during which a sensor must be active so that a touch is reported.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Widget threshold parameters will be adjusted as required in <a href="#_Stage_5_-">Stage 5</a>.</p>
+</blockquote>
+<ol start="5">
+<li>
+<p>Open <strong>Advanced → Scan Configuration</strong> to set up the GPIO connections for the sensor, CMOD, and shield pins</p>
+</li>
+<li>
+<p>Configure pins for the electrodes using the drop-down menu</p>
+</li>
+<li>
+<p>Configure the scan slots using the <strong>Auto-assign</strong> slots option. It automatically reassigns all slots for the sensors based on a widget and sensor order</p>
+</li>
+<li>
+<p>Select <strong>Button0_Sns0</strong> as Ganged under the LowPower0 widget</p>
+</li>
+<li>
+<p>Check the notice list for warnings or errors</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_configurator_scan_configuration_tab.png" alt="Figure 13. CAPSENSE&trade; configurator scan- Configuration tab" style="width:900px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="10">
+<li>
+<p>Click <strong>Save</strong> to apply the settings</p>
+</li>
+<li>
+<p>Program the device from the <strong>ModusToolbox&trade; for VS Code</strong> extension</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/programming_the_device_from_vscode_extension.png" alt="Programming the device with the application from the ModusToolbox for VS Code extension" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<h4 id="stage-2-set-the-sense-clock-frequency"><span id="_Stage_2_-_1"></span>Stage 2 - set the sense clock frequency<a class="headerlink" href="#stage-2-set-the-sense-clock-frequency" title="Permanent link">&para;</a></h4>
+<p>Once all of these items are configured with initial values, program the device and begin measuring the charge and discharge cycle on the electrode so that the sense clock can be configured properly. The sense clock is derived from the modulator clock using a clock-divider and is used to scan the sensor by driving the CAPSENSE&trade; switched capacitor circuits. Both the clock source and clock divider are configurable. The sense clock divider should be configured such that the pulse width of the sense clock is long enough to allow the sensor capacitance to charge and discharge completely. This is verified by observing the charging and discharging waveforms of the sensor using an oscilloscope and an active probe. The sensors should be probed on the electrode as far away from the device as possible. If a shield is used, then the shield can be used to check that the proper charge and discharge cycle is occurring. If the shield is being probed, it should be probed as far away from the device as possible.</p>
+<p>The sensor charges and discharges correctly when each charging phase has a pulse width of five time constants (<span class="arithmatex">\(5\tau\)</span>), reaching 99.3% of the required voltage by the end of the phase.</p>
+<div class="figure-images">
+<img src="assets/images/msclp_clock_tree.png" alt="Figure 15. MSCLP clock tree" style="width:814px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<p>The sense clock frequency must be configured to allow for proper charging and discharging of the sensor. A slower sense clock frequency will allow for sensors with larger parasitic capacitances to charge and discharge properly. The charge/discharge cycle must be observed using an oscilloscope with active probes.</p>
+<div class="figure-images">
+<img src="assets/images/proper_charge_cycles_observed_with_an_oscilloscope.png" alt="Figure 16. Proper charge cycles observed with an oscilloscope" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<div class="figure-images">
+<img src="assets/images/improper_charge_cycles_observed_with_an_oscilloscope.png" alt="Figure 17. Improper charge cycles observed with an oscilloscope" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<p>Without the proper charge/discharge cycle, the signal read by the CAPSENSE&trade; MSCLP is noisy. Follow these steps for tuning the sense clock divider.</p>
+<ol>
+<li>Program the board and launch the <strong>CAPSENSE&trade; Tuner</strong></li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/launching_capsense_tuner_from_vscode_extension.png" alt="Launching the CAPSENSE&trade; Tuner from the ModusToolbox for VS Code extension Quick panel" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="2">
+<li>You may need to configure the tuner before starting the connection. This can be done by navigating to the <strong>Tools → Tuner Communication Setup</strong> in the top ribbon. Select your KitProg3 and choose I2C. Ensure that the Port configuration also matches</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_tuner_communication_setup.png" alt="Figure 19. CAPSENSE&trade; tuner communication setup" style="width:659px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="3">
+<li>Connect to the target and begin streaming</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_tuner_connect_to_target.png" alt="Figure 20. CAPSENSE&trade; tuner connect to target" style="width:381px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<div class="figure-images">
+<img src="assets/images/capsense_tuner_begin_streaming.png" alt="Figure 21. CAPSENSE&trade; tuner begin streaming" style="width:379px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="4">
+<li>Enable all widgets by clicking the button in the top left corner of the <strong>Widget Explorer</strong></li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_tuner_enable_all_widgets.png" alt="Figure 22. CAPSENSE&trade; tuner enable all widgets" style="width:379px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="5">
+<li>
+<p>Observe the charging waveform of the sensor as described in <a href="#_Stage_2_-_1">Stage 2 - Set the sense clock frequency</a></p>
+</li>
+<li>
+<p>If the charging is incomplete, increase the sense clock divider. This can be done in CAPSENSE&trade; Tuner by selecting the sensor and editing the sense clock divider parameter in the Widget/Sensor Parameters panel. The sense clock divider should be divisible by 4; this ensures that all four scan phases have equal durations</p>
+</li>
+<li>
+<p>After editing the value, click the <strong>Apply to Device</strong> button and observe the waveform again. Repeat this until complete settling is observed</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_tuner_widget_sensor_parameter_sense_clock_divider.png" alt="Figure 23. CAPSENSE&trade; Tuner widget/sensor parameter sense clock divider" style="width:429px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<blockquote>
+<p><strong>Note:</strong> Using a passive probe will add parasitic capacitance of around 15 pF; therefore, it should be considered during tuning.</p>
+</blockquote>
+<ol start="8">
+<li>
+<p>Repeat this process for all the sensors and the shield. Each sensor might require a different sense clock divider value to charge/discharge completely. But all the sensors that are in the same widget need to have the same sense clock source, sense clock divider and number of sub-conversions. Therefore, take the largest sense clock divider in a given widget and apply it to all the other sensors in the widget</p>
+</li>
+<li>
+<p>Once the sense clock divider meets the requirements, click <strong>Apply to Project</strong> to save the configuration to the project</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/capsense_tuner_apply_to_project.png" alt="Figure 24. CAPSENSE&trade; Tuner apply to project" style="width:381px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<h4 id="stage-3-measure-sensor-capacitance-to-set-cdac-tuning-mode"><span id="_Stage_3_-"></span>Stage 3 - measure sensor capacitance to set CDAC tuning mode<a class="headerlink" href="#stage-3-measure-sensor-capacitance-to-set-cdac-tuning-mode" title="Permanent link">&para;</a></h4>
+<p>Generally, the CDAC tuning mode is recommended to be set to <strong>Auto</strong>; the appropriate tuning mode to use has some dependency on the sensor parasitic capacitance (Cp).</p>
+<p>In order to avoid signal variation across devices in production, PSOC&trade; 4100T Plus devices have CDAC trim codes in Supervisory Flash (SFlash; read-only). This code is used to scale the Reference CDAC and Fine CDAC parameters, which compensate for variations in the CDAC and bring down the overall signal variation across units.</p>
+<p>This trimming is only applicable when tuning CSD widgets in active and low power modes when the sensor parasitic capacitance is less than 4 pF. When using the trimming codes to scale the reference and fine CDAC values, the reference and fine CDAC modes should be set to <strong>Manual</strong>.</p>
+<p>The CAPSENSE&trade; middleware provides built-in self-test (BIST) APIs to measure the capacitance of sensors configured in the application. If the BIST is run for a sensor and the result shows that a sensor's parasitic capacitance is below 4 pF, CDAC scaling should be enabled, and the CDAC values should be manually configured.</p>
+<ol>
+<li>
+<p>Measure the sensor Cp using the CAPSENSE&trade; middleware, which provides Built-In Self-Test (BIST) APIs to measure the capacitance of sensors configured in the application</p>
+</li>
+<li>
+<p>Open CAPSENSE&trade; Configurator from the quick panel and enable the library</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/enabling_bist_in_the_capsense_configurator.png" alt="Figure 25. Enabling BIST in the CAPSENSE&trade; configurator" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="3">
+<li>The middleware API used to measure the capacitance of the CSD widget, as shown below, should be placed before the main.c for loop, but after the CAPSENSE&trade; initialization</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="cm">/* Measure sensor capacitance of the CSD widgets */</span>
+<span class="n">Cy_CapSense_RunSelfTest</span><span class="p">(</span><span class="n">CY_CAPSENSE_BIST_SNS_CAP_MASK</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+</code></pre></div>
+<ol start="4">
+<li>
+<p>Program the device</p>
+</li>
+<li>
+<p>Open the tuner and check the sensor capacitance (Cp) values. If the Cp value is above 4 pF, set all CDAC parameters to Auto and proceed to <a href="#_Stage_4_-_1">Stage 4 tuning</a></p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/observing_measured_sensor_capacitance_in_the_capsense_tuner.png" alt="Figure 26. Observing measured sensor capacitance in the CAPSENSE&trade; tuner" style="width:1200px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<blockquote>
+<p><strong>Note:</strong> Remove the Self-Test API once the sensor capacitance is measured.</p>
+</blockquote>
+<ol start="6">
+<li>
+<p>Enable CDAC scaling and set the manual CDAC values if the sensor Cp is below 4 pF</p>
+</li>
+<li>
+<p>Close the CAPSENSE&trade; Tuner</p>
+</li>
+<li>
+<p>Open CAPSENSE&trade; Configurator and start by setting all CDAC parameters to <strong>Auto</strong></p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/setting_cdac_parameters_to_auto_in_the_capsense_configurator.png" alt="Figure 27. Setting CDAC parameters to Auto in the CAPSENSE&trade; configurator" style="width:600px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="9">
+<li>Program the device. Run the CAPSENSE&trade; Tuner and click the <strong>Apply to project</strong> button. This applies the auto-calculated CDAC values to the project configuration</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/applying_cdac_parameters_from_the_capsense_tune.png" alt="Figure 28. Applying CDAC parameters from the CAPSENSE&trade; tune" style="width:400px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="10">
+<li>Close and reopen the CAPSENSE&trade; Configurator and enable CDAC scaling</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/enabling_cdac_scaling_from_the_capsense_configurator.png" alt="Figure 29. Enabling CDAC scaling from the CAPSENSE&trade; Configurator" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="11">
+<li>Set the Manual tuning mode only for Reference CDAC mode and Fine CDAC mode parameters. You can see the CDAC values observed in Figure 28 when CDAC was set to <strong>Auto</strong></li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/setting_cdac_parameters_manually_in_the_capsense_configurator.png" alt="Figure 30. Setting CDAC parameters manually in the CAPSENSE&trade; configurator" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="12">
+<li>
+<p>Flash the device with the updated CAPSENSE&trade; configuration</p>
+</li>
+<li>
+<p>Open CAPSENSE&trade; Tuner. Now you can see the scaled parameters after applying CDAC scaling</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/checking_that_cdac_parameters_were_set_in_the_capsense_tuner.png" alt="Figure 31. Checking that CDAC parameters were set in the CAPSENSE&trade; tuner" style="width:292px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="14">
+<li>Use this as a base CDAC configuration and proceed with tuning</li>
+</ol>
+<p><span id="_Stage_4_-_1"></span></p>
+<h4 id="stage-4-fine-tune-for-the-required-snr-power-and-refresh-rate">Stage 4 - fine-tune for the required SNR, power, and refresh rate<a class="headerlink" href="#stage-4-fine-tune-for-the-required-snr-power-and-refresh-rate" title="Permanent link">&para;</a></h4>
+<p>Once the sense clock frequency is set correctly and CDAC tuning is complete, the sensor can be tuned for optimal sensitivity, timing, and power consumption requirements. Using the CAPSENSE&trade; tuner, the SNR can be measured. The number of sensor sub-conversions can be increased until the SNR requirements are met. Generally, a 5:1 SNR is the minimum required.</p>
+<p>If the system is noisy (&gt; 40% of signal), enable the filters. The PSOC&trade; 4100T Plus and other devices with the MSCLP block have the following raw count filters available.</p>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Median</td>
+<td>Eliminates noise spikes from motors and switching power supplies</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>Eliminates periodic noise such as power supply or AC noise</td>
+</tr>
+<tr>
+<td>First Order IIR</td>
+<td>A software IIR filter that eliminates high-frequency noise. A lower coefficient results in lower noise but increases response time. The coefficient range is 1 to 255.</td>
+</tr>
+<tr>
+<td>Hardware IIR</td>
+<td>Eliminates high-frequency noise. The low coefficient means less filtering, but the response time is higher.</td>
+</tr>
+</tbody>
+</table>
+<p>The MSCLP low-power CSD button example project enables a state machine for application power modes.</p>
+<div class="figure-images">
+<img src="assets/images/example_code_application_power_state_machine.png" alt="Figure 32. Example code application power state machine" style="width:281px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<p>Along with filtering, the refresh rate for each application's power mode can be adjusted to increase or decrease response time and power consumption.</p>
+<ol>
+<li>
+<p>Use the CAPSENSE&trade; Tuner to measure the SNR</p>
+</li>
+<li>
+<p>Navigate to <strong>SNR Measurement</strong> and click <strong>Acquire Noise</strong>, ensuring nothing comes within the range of the sensor</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/acquiring_noise_in_the_capsense_tuner.png" alt="Figure 33. Acquiring noise in the CAPSENSE&trade; tuner" style="width:1200px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="3">
+<li>Once the noise is captured, generate an expected typical touch on the sensor, and then click <strong>Acquire Signal</strong> while generating the touch; it captures the signal</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/acquiring_signal_in_the_capsense_tuner.png" alt="Figure 34. Acquiring signal in the CAPSENSE&trade; tuner" style="width:1200px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<blockquote>
+<p><strong>Note:</strong> When tuning a low-power sensor, the raw counts are only reported to the tuner while in active or ALR application power modes. This means that while tuning the low-power sensors, data won’t appear on the graph until the device enters those modes. Also, when acquiring the signal, it is best to generate the touch, wait for a cycle of active or ALR mode, and then press the <strong>Acquire Signal</strong> button.</p>
+</blockquote>
+<ol start="4">
+<li>
+<p>If the SNR is less than 5:1, increase the number of sub-conversions. Edit the number of sub-conversions (Nsub) directly in the <strong>Widget/Sensor</strong> parameters tab of the CAPSENSE&trade; Tuner</p>
+</li>
+<li>
+<p>Apply changes to the device</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/applying_sensor_settings_from_the_capsense_tuner.png" alt="Figure 35. Applying sensor settings from the CAPSENSE&trade; Tuner" style="width:308px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="6">
+<li>
+<p>Repeat steps 1 to 3 until the SNR of 5:1 is met and the signal count is greater than 50</p>
+</li>
+<li>
+<p>If the system is noisy (&gt; 40% of signal), enable the filters described in <a href="#_Stage_4_-_1">Stage 4 description</a></p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/adjusting_filters_in_the_capsense_configurator.png" alt="Figure 36. Adjusting filters in the CAPSENSE&trade; configurator" style="width:800px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="8">
+<li>Click <strong>Save</strong> and program the device to update the filter settings</li>
+</ol>
+<h4 id="stage-5-tune-the-threshold-parameters"><span id="_Stage_5_-"></span>Stage 5 - tune the threshold parameters<a class="headerlink" href="#stage-5-tune-the-threshold-parameters" title="Permanent link">&para;</a></h4>
+<p>Various thresholds related to the signal need to be set for each sensor. Using the CAPSENSE&trade; tuner, the sensor signal during a touch event can be observed. The recommended settings for each threshold are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Recommended setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Finger threshold</td>
+<td>80% of the touch signal</td>
+</tr>
+<tr>
+<td>Noise threshold</td>
+<td>40% of the touch threshold</td>
+</tr>
+<tr>
+<td>Negative noise threshold</td>
+<td>40% of the touch threshold</td>
+</tr>
+<tr>
+<td>Low baseline reset</td>
+<td>30 (by default)</td>
+</tr>
+<tr>
+<td>Hysteresis</td>
+<td>10% of the touch signal</td>
+</tr>
+<tr>
+<td>ON debounce</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>In the CAPSENSE&trade; Tuner, switch to the <strong>Graph View</strong> tab and select the widget to be tuned</p>
+</li>
+<li>
+<p>Touch the sensor widget and monitor the touch signal in the <strong>Sensor Signal</strong> graph</p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/observing_touch_signal_with_the_capsense_tuner_graph_view.png" alt="Figure 37. Observing touch signal with the CAPSENSE&trade; Tuner graph view" style="width:1200px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="3">
+<li>Using the recommendation detailed in the <a href="#_Stage_5_-">Stage 5 description</a>, set the thresholds and apply them using the CAPSENSE&trade; tuner</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/adjusting_thresholds_using_the_capsense_tuner_widget_sensor_window.png" alt="Figure 38. Adjusting thresholds using the CAPSENSE&trade; Tuner widget/sensor window" style="width:400px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="4">
+<li>For the low-power sensor, set the touch threshold to the maximum (65535) to prevent a touch from waking the device from wake-on-touch mode, and then follow steps 1 to 3 for tuning the low-power sensor thresholds</li>
+</ol>
+<h3 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
+<p>After applying the configuration, test the performance by touching the button. If your sensor is tuned correctly, you will observe the touch status go from 0 to 1 in the Status panel of the Graph View tab. The status of the button is also indicated by the green LED in the kit; the green LED turns ON when the button is pressed. The red LED will blink at different rates to indicate which application power mode the device is in: 10 Hz for active mode, 2 Hz for ALR mode, and 1 Hz for WoT mode.</p>
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
+<p>In this exercise, you tuned a self-capacitance sensor using the CAPSENSE&trade; performance tuning method. Using this iterative method, you can tune nearly all self-capacitive sensors for optimal performance while considering the application’s performance, responsiveness, and power consumption.</p>
+<p><span id="capsensetm-low-power-tuning"></span></p>
+<h2 id="capsensetm-low-power-tuning">CAPSENSE&trade; low power tuning<a class="headerlink" href="#capsensetm-low-power-tuning" title="Permanent link">&para;</a></h2>
+<h3 id="objective_1">Objective<a class="headerlink" href="#objective_1" title="Permanent link">&para;</a></h3>
+<p>The objective of this lab is to demonstrate how to gang multiple sensors to reduce the low-power scan duration, as well as demonstrate wake-on-touch versus wake-on-approach methods of low-power HMI strategies.</p>
+<h3 id="description_1">Description<a class="headerlink" href="#description_1" title="Permanent link">&para;</a></h3>
+<p>When designing an HMI for a low-power application, such as a wearable device, multiple capacitive sensors are often used. The more capacitive sensors that need to be sensed, the longer the scan duration takes, causing the MSCLP block to be active for a longer period of time. In previous versions of the MSC block, a proximity electrode that typically looped around the entire touch area was needed for proximity wakeup, complicating the layout. A major benefit to using a PSOC&trade; device with the MSCLP block is the ability to gang sensors together for low-power sensing. This allows the MSCLP block to only sense a smaller subset of sensors instead of all sensors required for the HMI.</p>
+<div class="figure-images">
+<img src="assets/images/analog_mux_connecting_multiple_sensors_to_capsense_circuitry.png" alt="Figure 39. Analog MUX connecting multiple sensors to CAPSENSE&trade; circuitry" style="width:672px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<p>There are two main strategies for low-power sensing:</p>
+<ol>
+<li><strong>Wake-on-touch (WoT)</strong></li>
+</ol>
+<p>If the low-power sensor is tuned to detect touch, a touch event on the low-power widget will wake the device such that it begins scanning all sensors independently, which allows it to determine which button was pressed. This method will provide the lowest average power consumption as the refresh rate and scan duration in WoT mode are the lowest, and accidental proximity events with the touch area will not wake the device from WoT application power mode.</p>
+<ol start="2">
+<li><strong>Wake-on-approach</strong></li>
+</ol>
+<p>If the low-power sensor is tuned to detect proximity, a proximity event of any button will wake the device, such that it begins scanning all sensors independently. This strategy is useful for applications where quick-tap or double-tap detection is required. Typically, the user must be able to see the touch interface for this type of user experience to be used. This strategy may cause higher average power usage as accidental proximity events near the touch interface will wake the device from the WoT application power mode.</p>
+<h3 id="adding-the-csx-button-and-accompanying-low-power-sensor"><span id="_Adding_the_CSX"></span>Adding the CSX button and accompanying low-power sensor<a class="headerlink" href="#adding-the-csx-button-and-accompanying-low-power-sensor" title="Permanent link">&para;</a></h3>
+<p>The same ModusToolbox will be used for this lab, but the CSX button will be added.</p>
+<ol>
+<li>Launch the <strong>CAPSENSE Configurator</strong> from the <strong>ModusToolbox&trade; for VS Code extension</strong></li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/launching_capsense_configurator_from_vscode_extension.png" alt="Figure 42. Launch the CAPSENSE&trade; configurator from vs code" style="width:600px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="2">
+<li>Add the CSX button and a LowPower from the CAPSENSE&trade; configurator - Basic tab by pressing the <strong>+</strong> (add) button</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/add_button_using_capsense_configurator.png" alt="Figure 43. Add button using CAPSENSE&trade; configurator" style="width:277px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="3">
+<li>Select <strong>CSX RM</strong> as the Sensing method for the new Button1 and <strong>CSD RM</strong> as the Sensing Method for the new LowPower1 sensor</li>
+</ol>
+<div class="figure-images figure-images-stacked">
+<img src="assets/images/selecting_the_sensing_method_1.png" alt="Figure 44. Selecting the sensing method (1 of 2)" style="width:497px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+<img src="assets/images/selecting_the_sensing_method_2.png" alt="Figure 44. Selecting the sensing method (2 of 2)" style="width:492px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="4">
+<li>
+<p>Navigate to the <strong>Advanced</strong> tab and reduce the shield count from 3 to 1. By default, when creating the CSD button example project, the CSX pins are set as shield pins</p>
+</li>
+<li>
+<p>Navigate to the <strong>Scan Configuration</strong> tab and assign the RX and TX pins for the new <strong>Button1</strong>. Gang the RX and TX pins of <strong>Button1</strong> for the <strong>LowPower1</strong> sensor, and then set up <strong>shield0</strong> to use <strong>P4.3</strong></p>
+</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/selecting_the_rx_and_tx_pins_for_the_new_button1_sensor.png" alt="Figure 45. Selecting the RX and TX pins for the new Button1 sensor" style="width:573px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<div class="figure-images">
+<img src="assets/images/ganging_button1_rx_and_tx_pins_for_lowpower1_sensor.png" alt="Figure 46. Ganging Button1 RX and TX pins for LowPower1 sensor" style="width:399px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<div class="figure-images">
+<img src="assets/images/selecting_the_shield_pin.png" alt="Figure 47. Selecting the shield pin" style="width:501px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="6">
+<li>Update the <code>led_control()</code> function in <code>main.c</code> to activate the green LED when a touch is detected on the new button</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">CAPSENSE_WIDGET_INACTIVE</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">Cy_CapSense_IsWidgetActive</span><span class="p">(</span><span class="n">CY_CAPSENSE_BUTTON0_WDGT_ID</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Cy_GPIO_Write</span><span class="p">(</span><span class="n">CYBSP_USER_LED2_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">CYBSP_USER_LED2_NUM</span><span class="p">,</span><span class="w"> </span><span class="n">CYBSP_LED_ON</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">CAPSENSE_WIDGET_INACTIVE</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">Cy_CapSense_IsWidgetActive</span><span class="p">(</span><span class="n">CY_CAPSENSE_BUTTON1_WDGT_ID</span><span class="p">,</span><span class="w">   </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Cy_GPIO_Write</span><span class="p">(</span><span class="n">CYBSP_USER_LED2_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">CYBSP_USER_LED2_NUM</span><span class="p">,</span><span class="w"> </span><span class="n">CYBSP_LED_ON</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Cy_GPIO_Write</span><span class="p">(</span><span class="n">CYBSP_USER_LED2_PORT</span><span class="p">,</span><span class="w"> </span><span class="n">CYBSP_USER_LED2_NUM</span><span class="p">,</span><span class="w"> </span><span class="n">CYBSP_LED_OFF</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<ol start="7">
+<li>Build and program the device and observe the green LED turning on when a touch is generated. You may notice that the sensitivity of the sensor is not set up correctly. At this point, you may go through the tuning steps from the <a href="#_Stage_1_-">first lab</a>, or you can apply the following settings to the CSX button</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/csx_settings.png" alt="Figure 48. CSX settings" style="width:335px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<div class="figure-images">
+<img src="assets/images/csx_button_settings.png" alt="Figure 49. CSX button settings" style="width:713px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<h3 id="tuning-a-low-power-sensor">Tuning a low-power sensor<a class="headerlink" href="#tuning-a-low-power-sensor" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Disable ALR, reduce the time for going from the <strong>Active to WoT</strong> mode</p>
+</li>
+<li>
+<p>Change <code>ACTIVE_MODE_TIMEOUT_SEC</code> to <code>1</code></p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="cm">/* Timeout to move from ACTIVE mode to ALR mode if there is no user activity */</span>
+<span class="cp">#define ACTIVE_MODE_TIMEOUT_SEC         (1u)</span>
+</code></pre></div>
+<ol start="3">
+<li>Update the <strong>ACTIVE_MODE</strong> application power mode to jump from the active mode to the wake-on-touch (WOT) mode</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">case</span><span class="w"> </span><span class="no">ACTIVE_MODE</span><span class="p">:</span>
+<span class="w">    </span><span class="n">Cy_CapSense_ScanAllSlots</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">Cy_CapSense_IsBusy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cp">#if ENABLE_PWM_LED</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#else</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterDeepSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#endif</span>
+<span class="w">        </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">        </span><span class="cm">/* This is a place where all interrupt handlers will be executed */</span>
+<span class="w">        </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">    </span><span class="cp">#if ENABLE_RUN_TIME_MEASUREMENT</span>
+<span class="w">    </span><span class="n">active_processing_time</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">start_runtime_measurement</span><span class="p">();</span>
+<span class="w">    </span><span class="cp">#endif</span>
+<span class="w">    </span><span class="n">Cy_CapSense_ProcessAllWidgets</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="cm">/* Scan, process, and check the status of all Active mode sensors */</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Cy_CapSense_IsAnyWidgetActive</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE_TIMEOUT</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="o">--</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">TIMEOUT_RESET</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">capsense_state_timeout</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">capsense_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WOT_MODE</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="cp">#if ENABLE_RUN_TIME_MEASUREMENT</span>
+<span class="w">    </span><span class="n">active_processing_time</span><span class="o">=</span><span class="n">stop_runtime_measurement</span><span class="p">();</span>
+<span class="w">    </span><span class="cp">#endif</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="cm">/* End of ACTIVE_MODE */</span>
+</code></pre></div>
+<ol start="4">
+<li>Update the <strong>WOT_MODE</strong> application power mode state to jump to <strong>ACTIVE_MODE</strong> when the timeout occurs</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">case</span><span class="w"> </span><span class="no">WOT_MODE</span><span class="w"> </span><span class="p">:</span>
+<span class="w">    </span><span class="n">Cy_CapSense_ScanAllLpSlots</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">Cy_CapSense_IsBusy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cp">#if ENABLE_PWM_LED</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#else</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterDeepSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#endif</span>
+<span class="w">        </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">        </span><span class="cm">/* This is a place where all interrupt handlers will be executed */</span>
+<span class="w">        </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Cy_CapSense_IsAnyLpWidgetActive</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE</span><span class="p">;</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE_TIMEOUT</span><span class="p">;</span>
+<span class="w">        </span><span class="cm">/* Configure the MSCLP wake-up timer as per the ACTIVE mode refresh rate */</span>
+<span class="w">        </span><span class="n">Cy_CapSense_ConfigureMsclpTimer</span><span class="p">(</span><span class="n">ACTIVE_MODE_TIMER</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE</span><span class="p">;</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE_TIMEOUT</span><span class="p">;</span>
+<span class="w">        </span><span class="cm">/* Configure the MSCLP wake-up timer as per the ACTIVE mode refresh rate */</span>
+<span class="w">        </span><span class="n">Cy_CapSense_ConfigureMsclpTimer</span><span class="p">(</span><span class="n">ACTIVE_MODE_TIMER</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="cm">/* End of "WAKE_ON_TOUCH_MODE" */</span>
+</code></pre></div>
+<ol start="5">
+<li>
+<p>Set all touch thresholds to maximum (<strong>65535</strong>) to prevent a touch from being detected while tuning the
+low-power sensor</p>
+</li>
+<li>
+<p>Follow the <a href="#_Stage_1_-">Performance tuning steps</a>:</p>
+<ul>
+<li>Initial parameters set (this is already complete)</li>
+<li>Update the sense clock frequency</li>
+<li>Fine-tune SNR, power, and refresh rate</li>
+<li>Tune thresholds</li>
+</ul>
+</li>
+<li>
+<p>Revert changes made in code</p>
+</li>
+<li>
+<p>Change <code>ACTIVE_MODE_TIMEOUT_SEC</code> to <code>10</code></p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="cm">/* Timeout to move from ACTIVE mode to ALR mode if there is no user activity */</span>
+<span class="cp">#define ACTIVE_MODE_TIMEOUT_SEC         (10u)</span>
+</code></pre></div>
+<ol start="9">
+<li>Update the <strong>ACTIVE_MODE</strong> application power mode state to jump from the active mode to the ALR mode</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">case</span><span class="w"> </span><span class="no">ACTIVE_MODE</span><span class="p">:</span>
+<span class="w">    </span><span class="n">Cy_CapSense_ScanAllSlots</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">Cy_CapSense_IsBusy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cp">#if ENABLE_PWM_LED</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#else</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterDeepSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#endif</span>
+<span class="w">        </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">        </span><span class="cm">/* This is a place where all interrupt handlers will be executed */</span>
+<span class="w">        </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">    </span><span class="cp">#if ENABLE_RUN_TIME_MEASUREMENT</span>
+<span class="w">    </span><span class="n">active_processing_time</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">start_runtime_measurement</span><span class="p">();</span>
+<span class="w">    </span><span class="cp">#endif</span>
+<span class="w">    </span><span class="n">Cy_CapSense_ProcessAllWidgets</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="cm">/* Scan, process, and check the status of all Active mode sensors */</span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Cy_CapSense_IsAnyWidgetActive</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE_TIMEOUT</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="o">--</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">TIMEOUT_RESET</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">capsense_state_timeout</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">capsense_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ALR_MODE</span><span class="p">;</span>
+<span class="w">            </span><span class="n">capsense_state_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ALR_MODE_TIMEOUT</span><span class="p">;</span>
+<span class="w">            </span><span class="cm">/* Configure the MSCLP wake-up timer as per the ALR mode refresh rate */</span>
+<span class="w">    </span><span class="n">Cy_CapSense_ConfigureMsclpTimer</span><span class="p">(</span><span class="n">ALR_MODE_TIMER</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="cp">#if ENABLE_RUN_TIME_MEASUREMENT</span>
+<span class="w">    </span><span class="n">active_processing_time</span><span class="o">=</span><span class="n">stop_runtime_measurement</span><span class="p">();</span>
+<span class="w">    </span><span class="cp">#endif</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="cm">/* End of ACTIVE_MODE */</span>
+</code></pre></div>
+<ol start="10">
+<li>Update the <strong>WOT_MODE</strong> application power mode state to jump to <strong>ACTIVE_MODE</strong> when the timeout occurs</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">case</span><span class="w"> </span><span class="no">WOT_MODE</span><span class="w"> </span><span class="p">:</span>
+<span class="w">    </span><span class="n">Cy_CapSense_ScanAllLpSlots</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">Cy_CapSense_IsBusy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="cp">#if ENABLE_PWM_LED</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#else</span>
+<span class="w">        </span><span class="n">Cy_SysPm_CpuEnterDeepSleep</span><span class="p">();</span>
+<span class="w">        </span><span class="cp">#endif</span>
+<span class="w">        </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">        </span><span class="cm">/* This is a place where all interrupt handlers will be executed */</span>
+<span class="w">        </span><span class="n">interruptStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Cy_SysLib_EnterCriticalSection</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">Cy_SysLib_ExitCriticalSection</span><span class="p">(</span><span class="n">interruptStatus</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Cy_CapSense_IsAnyLpWidgetActive</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">))</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE</span><span class="p">;</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ACTIVE_MODE_TIMEOUT</span><span class="p">;</span>
+<span class="w">        </span><span class="cm">/* Configure the MSCLP wake-up timer as per the ACTIVE mode refresh rate */</span>
+<span class="w">        </span><span class="n">Cy_CapSense_ConfigureMsclpTimer</span><span class="p">(</span><span class="n">ACTIVE_MODE_TIMER</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">capsense_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ALR_MODE</span><span class="p">;</span>
+<span class="w">        </span><span class="n">capsense_state_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ALR_MODE_TIMEOUT</span><span class="p">;</span>
+<span class="w">        </span><span class="cm">/* Configure the MSCLP wake-up timer as per the ALR mode refresh rate */</span>
+<span class="w">        </span><span class="n">Cy_CapSense_ConfigureMsclpTimer</span><span class="p">(</span><span class="n">ALR_MODE_TIMER</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cy_capsense_context</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="cm">/* End of "WAKE_ON_TOUCH_MODE" */</span>
+</code></pre></div>
+<ol start="11">
+<li>Follow the steps to measure the current and fill out the table in the <a href="#_Measurements_2">Measurements</a> section for the “Two Low Power Sensors” configuration</li>
+</ol>
+<h3 id="set-up-a-single-low-power-sensor-for-wake-on-touch">Set up a single low-power sensor for wake on touch<a class="headerlink" href="#set-up-a-single-low-power-sensor-for-wake-on-touch" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open the CAPSENSE&trade; Configurator and remove the <strong>LowPower1</strong> sensor that was added in <a href="#_Adding_the_CSX">section 4.3</a> by selecting the sensor and pressing the <strong>Delete</strong> button</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/deleting_the_lowpower1_sensor.png" alt="Figure 50. Deleting the lowPower1 sensor" style="width:398px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="2">
+<li>Navigate to the <strong>Scan Configuration</strong> tab, and then in the <strong>LowPower0</strong> configuration, select the Button0 and Button1 pins in the <strong>Ganged</strong> row to enable ganging of all electrodes for the low-power sensor</li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/selecting_all_csd_and_csx_pins_to_be_ganged_on_the_low_power_sensor.png" alt="Figure 51. Selecting all CSD and CSX pins to be ganged on the low-power sensor" style="width:393px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="3">
+<li>
+<p>See the section Tuning a low-power sensor, to follow the steps to tune the low-power sensor</p>
+</li>
+<li>
+<p>Follow the steps to measure the current and fill out the table in the <a href="#_Measurements_2">Measurements</a> section for the “One Low Power Sensor” configuration</p>
+</li>
+</ol>
+<h3 id="adjust-for-wake-on-approach">Adjust for wake on approach<a class="headerlink" href="#adjust-for-wake-on-approach" title="Permanent link">&para;</a></h3>
+<p>In some applications, it is critical to capture the user’s first touch. This is typical for battery-powered applications where the user can see the touch surface. In these applications, the user experience often requires that the device detect quick-tap or, in some cases, double-tap input on the CAPSENSE&trade; button. To accomplish this, you can increase the refresh rate of the low-power sensor or reduce the touch threshold so that a proximity event triggers the touch event. Increasing the refresh rate increases the average current consumption. Tuning the low-power sensor for proximity may also cause a higher average current if the user accidentally interacts with the touch surface.</p>
+<ol>
+<li>Tune the sensor for proximity by increasing the sensitivity and reducing the touch threshold to 60% of the signal determined from the SNR step while going through the <a href="#_Stage_1_-">performance tuning</a></li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/adjusting_the_touch_threshold_on_the_low_power_sensor_for_proximity.png" alt="Figure 52. Adjusting the touch threshold on the low-power sensor for proximity" style="width:384px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="2">
+<li>Follow the steps to measure the current and fill out the table in the <a href="#_Measurements_2">Measurements</a> section for the “One Low Power Sensor; Wake on Approach” configuration</li>
+</ol>
+<h3 id="measurements"><span id="_Measurements_2"></span>Measurements<a class="headerlink" href="#measurements" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Disable the <strong>Debug</strong> port in the <strong>Device Configurator</strong></li>
+</ol>
+<div class="figure-images">
+<img src="assets/images/disable_the_debug_port_in_the_device_configurator.png" alt="Figure 53. Disable the debug port in the device configurator" style="width:438px; max-width:100%; height:auto; display:block; margin:0 auto;" />
+</div>
+
+<ol start="2">
+<li>Set <code>ENABLE_PWM_LED</code> to <code>0</code></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="cm">/*Enable PWM controlled LEDs*/</span>
+<span class="cp">#define ENABLE_PWM_LED                  (0u)</span>
+</code></pre></div>
+<ol start="3">
+<li>Set <code>ENABLE_TUNER</code> to <code>0</code></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="cm">/* Enable this, if Tuner needs to be enabled */</span>
+<span class="cp">#define ENABLE_TUNER                    (0u)</span>
+</code></pre></div>
+<ol start="4">
+<li>Re-program the device, and then wait until the device is in its Wake-on-touch application power mode. Measure the current using the jumper (J2) and write down the measured current in the following table</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Expected current</th>
+<th>Measured current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Two Low-power sensors</td>
+<td>5 µA</td>
+<td>‒</td>
+</tr>
+<tr>
+<td>One Low-power sensor</td>
+<td>4.3 µA</td>
+<td>‒</td>
+</tr>
+<tr>
+<td>One Low-power sensor; Wake on approach</td>
+<td>4.5 µA</td>
+<td>‒</td>
+</tr>
+</tbody>
+</table>
+<h3 id="output_1">Output<a class="headerlink" href="#output_1" title="Permanent link">&para;</a></h3>
+<p>After applying the configuration, test the performance by touching the buttons. If your sensors are tuned correctly, you will observe the touch status go from 0 to 1 in the Status panel of the Graph View tab. The status of the buttons is also indicated by the green LED in the kit. If the wake-on-touch strategy is used, a clear press is required for the green LED to activate. If the wake-on-approach strategy is used, quick and double taps should activate the green LED.</p>
+<h3 id="conclusion_1">Conclusion<a class="headerlink" href="#conclusion_1" title="Permanent link">&para;</a></h3>
+<p>In this exercise, you added a new sensor to a design, tuned a low-power sensor, and implemented different low-power sensing strategies. You also learned the steps required to achieve the lowest power consumption while maintaining the required sensing for a given HMI.</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Infineon Technologies AG: AN85951: PSOC&trade; 4 and PSOC&trade; 6 MCU CAPSENSE&trade; design guide; <a href="https://www.infineon.com/dgdl/Infineon-AN85951_PSoC_4_and_PSoC_6_MCU_CapSense_Design_Guide-ApplicationNotes-v28_00-EN.pdf?fileId=8ac78c8c7cdc391c017d0723535d4661">Available online</a></li>
+</ul>
+<h2 id="revision-history">Revision history<a class="headerlink" href="#revision-history" title="Permanent link">&para;</a></h2>
+<div class="no-center-table">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Document revision</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Description of changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">**</td>
+<td style="text-align: left;">2025-12-04</td>
+<td style="text-align: left;">Initial release</td>
+</tr>
+<tr>
+<td style="text-align: left;">*A</td>
+<td style="text-align: left;">2026-05-19</td>
+<td style="text-align: left;">Updated to the latest Empower template.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="disclaimer">Disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">&para;</a></h2>
+<p>All referenced product or service names and trademarks are the property of their respective owners.</p>
+<p>The Bluetooth&reg; word mark and logos are registered trademarks owned by Bluetooth SIG, Inc., and any use of such marks by Infineon is under license.</p>
+<p>PSOC&trade;, formerly known as PSoC&trade;, is a trademark of Infineon Technologies. Any references to PSoC&trade; in this document or others shall be deemed to refer to PSOC&trade;.</p>
+<hr />
+<p>© Cypress Semiconductor Corporation, 2023-2026. This document is the property of Cypress Semiconductor Corporation, an Infineon Technologies company, and its affiliates ("Cypress").  This document, including any software or firmware included or referenced in this document ("Software"), is owned by Cypress under the intellectual property laws and treaties of the United States and other countries worldwide.  Cypress reserves all rights under such laws and treaties and does not, except as specifically stated in this paragraph, grant any license under its patents, copyrights, trademarks, or other intellectual property rights.  If the Software is not accompanied by a license agreement and you do not otherwise have a written agreement with Cypress governing the use of the Software, then Cypress hereby grants you a personal, non-exclusive, nontransferable license (without the right to sublicense) (1) under its copyright rights in the Software (a) for Software provided in source code form, to modify and reproduce the Software solely for use with Cypress hardware products, only internally within your organization, and (b) to distribute the Software in binary code form externally to end users (either directly or indirectly through resellers and distributors), solely for use on Cypress hardware product units, and (2) under those claims of Cypress's patents that are infringed by the Software (as provided by Cypress, unmodified) to make, use, distribute, and import the Software solely for use with Cypress hardware products.  Any other use, reproduction, modification, translation, or compilation of the Software is prohibited.
+<br>
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH REGARD TO THIS DOCUMENT OR ANY SOFTWARE OR ACCOMPANYING HARDWARE, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  No computing device can be absolutely secure.  Therefore, despite security measures implemented in Cypress hardware or software products, Cypress shall have no liability arising out of any security breach, such as unauthorized access to or use of a Cypress product. CYPRESS DOES NOT REPRESENT, WARRANT, OR GUARANTEE THAT CYPRESS PRODUCTS, OR SYSTEMS CREATED USING CYPRESS PRODUCTS, WILL BE FREE FROM CORRUPTION, ATTACK, VIRUSES, INTERFERENCE, HACKING, DATA LOSS OR THEFT, OR OTHER SECURITY INTRUSION (collectively, "Security Breach").  Cypress disclaims any liability relating to any Security Breach, and you shall and hereby do release Cypress from any claim, damage, or other liability arising from any Security Breach.  In addition, the products described in these materials may contain design defects or errors known as errata which may cause the product to deviate from published specifications. To the extent permitted by applicable law, Cypress reserves the right to make changes to this document without further notice. Cypress does not assume any liability arising out of the application or use of any product or circuit described in this document. Any information provided in this document, including any sample design information or programming code, is provided only for reference purposes.  It is the responsibility of the user of this document to properly design, program, and test the functionality and safety of any application made of this information and any resulting product.  "High-Risk Device" means any device or system whose failure could cause personal injury, death, or property damage.  Examples of High-Risk Devices are weapons, nuclear installations, surgical implants, and other medical devices.  "Critical Component" means any component of a High-Risk Device whose failure to perform can be reasonably expected to cause, directly or indirectly, the failure of the High-Risk Device, or to affect its safety or effectiveness.  Cypress is not liable, in whole or in part, and you shall and hereby do release Cypress from any claim, damage, or other liability arising from any use of a Cypress product as a Critical Component in a High-Risk Device. You shall indemnify and hold Cypress, including its affiliates, and its directors, officers, employees, agents, distributors, and assigns harmless from and against all claims, costs, damages, and expenses, arising out of any claim, including claims for product liability, personal injury or death, or property damage arising from any use of a Cypress product as a Critical Component in a High-Risk Device. Cypress products are not intended or authorized for use as a Critical Component in any High-Risk Device except to the limited extent that (i) Cypress's published data sheet for the product explicitly states Cypress has qualified the product for use in a specific High-Risk Device, or (ii) Cypress has given you advance written authorization to use the product as a Critical Component in the specific High-Risk Device and you have signed a separate indemnification agreement.
+<br>
+Cypress, the Cypress logo, and combinations thereof, ModusToolbox, PSoC, CAPSENSE, EZ-USB, F-RAM, and TRAVEO are trademarks or registered trademarks of Cypress or a subsidiary of Cypress in the United States or in other countries. For a more complete list of Cypress trademarks, visit www.infineon.com. Other names and brands may be claimed as property of their respective owners.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>If CSX (mutual capacitance) electrodes are used, then inactive sensors should be connected to GND.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.top", "navigation.footer", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="javascripts/collapsible.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

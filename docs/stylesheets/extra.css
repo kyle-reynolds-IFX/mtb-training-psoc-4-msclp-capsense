@@ -1,0 +1,79 @@
+/* Infineon training manual overrides for MkDocs Material. */
+
+.md-typeset .headerlink,
+.md-sidebar.md-sidebar--secondary {
+  display: none !important;
+}
+
+.md-main {
+  flex-grow: 1;
+}
+
+.md-main__inner,
+.md-header__inner {
+  max-width: 100%;
+}
+
+.md-header {
+  background-color: #ffffff;
+  color: #0f766e;
+}
+
+.md-header .md-header__button,
+.md-header .md-header__title,
+.md-header .md-header__topic,
+.md-header .md-header__ellipsis {
+  color: #0f766e;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: #0f766e;
+  font-weight: 600;
+}
+
+.figure-images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto 1.25rem;
+}
+
+.figure-images img {
+  flex: 0 1 auto;
+}
+
+.figure-images-stacked {
+  flex-direction: column;
+  align-items: center;
+}
+
+.md-typeset__scrollwrap {
+  text-align: center;
+}
+
+.no-center-table .md-typeset__scrollwrap {
+  text-align: left;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #0f766e;
+  color: #ffffff;
+}
+
+.md-typeset pre,
+.md-typeset code {
+  border: 1px solid #c4cfe5;
+  background-color: #fbfcfd;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .figure-images {
+    display: block;
+  }
+
+  .figure-images img + img {
+    margin-top: 1rem;
+  }
+}
